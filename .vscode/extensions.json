@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "msjsdiag.debugger-for-chrome",
+        "EditorConfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "DavidAnson.vscode-markdownlint",
+        "ms-vscode.node-debug2",
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "vsmobile.vscode-react-native",
+        "eg2.tslint",
+        "ow.vscode-subword-navigation"
+    ]
+}
