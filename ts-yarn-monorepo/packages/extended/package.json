@@ -1,0 +1,10 @@
+{
+  "name": "@ts-example/extended",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Ali Hosseini Khayat",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.8.1"
+  }
+}
