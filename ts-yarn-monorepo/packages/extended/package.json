@@ -5,6 +5,7 @@
   "author": "Ali Hosseini Khayat",
   "license": "MIT",
   "devDependencies": {
+    "@types/base64-js": "^1.2.5",
     "typescript": "^2.8.1"
   },
   "dependencies": {
