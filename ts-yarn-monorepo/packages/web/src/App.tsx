@@ -1,12 +1,14 @@
 import * as React from "react";
 import { IExampleService, BasicExampleService } from "@ts-example/core";
+import { ExtendedExampleService } from "@ts-example/extended";
 import "./App.css";
 
 const logo = require("./logo.svg");
 
-class App extends React.Component {
+class App extends React.Component<{}, { useExtended: boolean }> {
   render() {
-    const exampleService: IExampleService = new BasicExampleService();
+    const exampleService: IExampleService = this.state && this.state.useExtended ?
+        new ExtendedExampleService() : new BasicExampleService();
     return (
       <div className="App">
         <header className="App-header">
@@ -18,6 +20,9 @@ class App extends React.Component {
         </p>
         <p>
             {exampleService.doExampleWork("Hello World!")}
+        </p>
+        <p>
+            <button onClick={() => this.setState({ useExtended: true })}>Use extended service</button>
         </p>
       </div>
     );
