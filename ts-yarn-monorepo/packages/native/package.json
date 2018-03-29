@@ -11,6 +11,10 @@
     "react-native": "0.54.4"
   },
   "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "@types/react": "^16.1.0",
+    "@types/react-native": "^0.52.21",
+    "@types/react-test-renderer": "^16.0.1",
     "babel-jest": "22.4.3",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.4.3",
@@ -21,19 +25,19 @@
   "jest": {
     "preset": "react-native",
     "moduleFileExtensions": [
-        "ts",
-        "tsx",
-        "js"
+      "ts",
+      "tsx",
+      "js"
     ],
     "transform": {
-        "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
-        "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "testPathIgnorePatterns": [
-        "\\.snap$",
-        "<rootDir>/node_modules/",
-        "<rootDir>/lib/"
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
     ],
     "cacheDirectory": ".jest/cache"
   }
