@@ -3,8 +3,11 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from "react-native";
+import { IExampleService, BasicExampleService } from "@ts-example/core";
+import { ExtendedExampleService } from "@ts-example/extended";
 
 const instructions: string = Platform.select({
   ios: "Press Cmd+R to reload,\n" +
@@ -14,8 +17,10 @@ const instructions: string = Platform.select({
 });
 
 type Props = {};
-export default class App extends React.Component<Props> {
+export default class App extends React.Component<Props, { useExtended: boolean }> {
   render(): JSX.Element {
+    const exampleService: IExampleService = this.state && this.state.useExtended ?
+        new ExtendedExampleService() : new BasicExampleService();
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -27,6 +32,10 @@ export default class App extends React.Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Text>
+            {Array.from(exampleService.doExampleWork("Hello World!"))}
+        </Text>
+        <Button onPress={() => this.setState({ useExtended: true })} title="Use extended service"/>
       </View>
     );
   }
