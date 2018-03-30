@@ -19,6 +19,7 @@
     "@types/react-test-renderer": "^16.0.1",
     "babel-jest": "22.4.3",
     "babel-preset-react-native": "4.0.0",
+    "find-root": "^1.1.0",
     "get-yarn-workspaces": "^1.0.1",
     "jest": "22.4.3",
     "react-test-renderer": "16.3.0-alpha.1",
