@@ -30,6 +30,12 @@ var config = {
         return blacklist([
             new RegExp(parentName + "[\\/]node_modules[\\/]react-native[\\/].*")
         ]);
+    },
+    getTransformModulePath() {
+        return require.resolve("react-native-typescript-transformer");
+    },
+    getSourceExts() {
+        return ["ts", "tsx"];
     }
 };
 module.exports = config;
