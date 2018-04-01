@@ -2,15 +2,24 @@
   "name": "@ts-example/extended",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "typings": "dist/index",
+  "typings": "dist/declarations/index",
   "author": "Ali Hosseini Khayat",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-cli --watch --progress",
+    "build": "webpack-cli --progress",
+    "build:prod": "cross-env NODE_ENV=production webpack-cli"
+  },
   "devDependencies": {
     "@types/base64-js": "^1.2.5",
-    "typescript": "^2.8.1"
+    "cross-env": "^5.1.4",
+    "ts-loader": "4.1.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
   },
   "dependencies": {
-    "base64-js": "^1.2.3",
-    "@ts-example/core": "^1.0.0"
+    "@ts-example/core": "^1.0.0",
+    "base64-js": "^1.2.3"
   }
 }
