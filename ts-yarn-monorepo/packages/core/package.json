@@ -2,7 +2,7 @@
   "name": "@ts-example/core",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "typings": "dist/index",
+  "typings": "dist/declarations/index",
   "author": "Ali Hosseini Khayat",
   "license": "MIT",
   "devDependencies": {
