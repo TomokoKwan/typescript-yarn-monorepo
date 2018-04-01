@@ -6,6 +6,7 @@
   "author": "Ali Hosseini Khayat",
   "license": "MIT",
   "devDependencies": {
+    "cross-env": "^5.1.4",
     "ts-loader": "4.1.0",
     "typescript": "^2.8.1",
     "webpack": "^4.4.1",
