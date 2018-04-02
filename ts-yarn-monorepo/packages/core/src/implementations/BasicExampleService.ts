@@ -1,4 +1,4 @@
-import { IExampleService } from "./IExampleService";
+import { IExampleService } from "@interfaces/IExampleService";
 
 export class BasicExampleService implements IExampleService {
     doExampleWork(input: string): Uint8Array {
